@@ -1,0 +1,205 @@
+Q1. man Command to get help about commands
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS Assignments$ man man
+	
+
+Q2. uname Print System information
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS Assignments$ uname
+	
+
+Q3. pwd Print current directory
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS Assignments$ pwd
+	
+
+Q4. hostname Print IP address and hostname of the machine
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS Assignments$ hostname
+	
+
+Q5. date Find today’s date
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS Assignments$ date
+	
+
+Q6. cal Print calendar for current year
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS Assignments$ cal
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS Assignments$ ncal
+	
+
+
+Q7. ls, dir See directory structure
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS Assignments$ ls -ls
+	Sol:  aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS Assignments$ dir -ls
+		
+
+Q8. cat Create file
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS Assignments$ cat >1.txt
+Hello World.
+31-05-2024
+
+Q9. cat>> Append some text into existing file
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS Assignments$ cat>> 1.txt
+Today is Friday
+
+Q10. cp Copy a file, Copy a directory
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS Assignments$ cp 1.txt ./copy
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~$ cp -R snap ./Pictures
+
+Q11. mv Move the files
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ mv Today copy
+
+Q12. mv Rename a file
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/copy$ mv Today today
+
+Q13. tac, rev Print the file in reverse order, Reverse each line in the file
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ tac 1.txt
+31-05-2024Today is Friday
+Hello World.
+	
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ rev 1.txt
+.dlroW olleH
+yadirF si yadoT4202-50-13
+
+Q14. wc Count the words, characters and lines in a file
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ wc 1.txt
+ 2  5 39 1.txt
+
+Q15. mkdir Create directory
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ mkdir create
+
+Q16. cd Change current directory
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ cd ..
+
+
+
+
+Q17. rm Remove a file, remove a directory ( with -R )
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ rm Today
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ rm -R copy_1
+
+Q18. rmdir remove empty directory
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ rmdir empty
+
+Q19. touch change the modification time , Create Multiple empty files at once
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ touch copy
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ touch empty empty_1
+
+Q20. sort Sort file.
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ cat> Sort
+Mahesh
+Pranav
+Aditya
+Nikhil
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ sort Sort
+Aditya
+Mahesh
+Nikhil
+Pranav
+
+Q21. uniq Avoid repetition in a file.
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ sort Sort|uniq
+Aditya
+Mahesh
+Nikhil
+Pranav
+
+Q22. head Print the specified number of lines from top in the file.
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ head -2 Sort
+Mahesh
+Pranav
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ head -1 Sort
+Mahesh
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ head -3 Sort
+Mahesh
+Pranav
+Aditya
+
+Q23. tail Print the specified number of lines from bottom in the file.
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ tail -2 Sort
+Aditya
+Mahesh
+
+
+
+Q24. factor Find the factors of a number
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ factor 125
+125: 5 5 5
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ factor 69
+69: 3 23
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ factor 16
+16: 2 2 2 2
+
+Q25. alias Create command shortcut
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ alias url="/home/aditya/OS_Assignments/"
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ url
+bash: /home/aditya/OS_Assignments/: Is a directory
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ pwd
+/home/aditya/OS_Assignments
+
+Q26. unalias remove the command shortcut
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ unalias url
+
+Q27. echo Print environment variables individually
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ echo $PATH
+/home/aditya/.nvm/versions/node/v21.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+Q28. ps Print current processes
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ ps
+    PID TTY          TIME CMD
+   4684 pts/0    00:00:00 bash
+   9653 pts/0    00:00:00 ps
+
+Q29. kill Kill the process
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ kill 5008
+
+Q30. env Print environment variables
+	Sol: aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ env
+SHELL=/bin/bash
+SESSION_MANAGER=local/aditya-VivoBook-15-ASUS-Laptop-X507UF:@/tmp/.ICE-unix/1998,unix/aditya-VivoBook-15-ASUS-Laptop-X507UF:/tmp/.ICE-unix/1998
+QT_ACCESSIBILITY=1
+COLORTERM=truecolor
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+SSH_AGENT_LAUNCHER=gnome-keyring
+NVM_INC=/home/aditya/.nvm/versions/node/v21.0.0/include/node
+XDG_MENU_PREFIX=gnome-
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GTK_IM_MODULE=ibus
+LANGUAGE=en_IN:en
+GNOME_SHELL_SESSION_MODE=ubuntu
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+XMODIFIERS=@im=ibus
+DESKTOP_SESSION=ubuntu
+GTK_MODULES=gail:atk-bridge
+DBUS_STARTER_BUS_TYPE=session
+PWD=/home/aditya/OS_Assignments
+LOGNAME=aditya
+XDG_SESSION_DESKTOP=ubuntu
+XDG_SESSION_TYPE=x11
+GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+SYSTEMD_EXEC_PID=1998
+XAUTHORITY=/run/user/1000/gdm/Xauthority
+WINDOWPATH=2
+HOME=/home/aditya
+USERNAME=aditya
+LANG=en_IN
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+XDG_CURRENT_DESKTOP=ubuntu:GNOME
+VTE_VERSION=6800
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/e36bfcf4_ef16_4bc8_b9d4_43e26aa5825b
+NVM_DIR=/home/aditya/.nvm
+LESSCLOSE=/usr/bin/lesspipe %s %s
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=aditya
+GNOME_TERMINAL_SERVICE=:1.100
+DISPLAY=:1
+SHLVL=1
+NVM_CD_FLAGS=
+QT_IM_MODULE=ibus
+DBUS_STARTER_ADDRESS=unix:path=/run/user/1000/bus,guid=3ad5ac289e4bd6f706f5b4f06659e9e4
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+PATH=/home/aditya/.nvm/versions/node/v21.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+GDMSESSION=ubuntu
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus,guid=3ad5ac289e4bd6f706f5b4f06659e9e4
+NVM_BIN=/home/aditya/.nvm/versions/node/v21.0.0/bin
+_=/usr/bin/env
