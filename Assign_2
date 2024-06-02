@@ -1,0 +1,273 @@
+Linux Commands Assignments - II
+
+1. List the directory contents date wise sorted. ( man ls)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ ls -l | sort
+drwxrwxr-x 2 aditya aditya 4096 Jun  1 23:54 Assign_3
+drwxrwxr-x 2 aditya aditya 4096 May 31 23:35 Assign_2
+drwxrwxr-x 4 aditya aditya 4096 May 31 23:27 Assign_1
+total 12
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ ls -l | sort -r
+total 12
+drwxrwxr-x 4 aditya aditya 4096 May 31 23:27 Assign_1
+drwxrwxr-x 2 aditya aditya 4096 May 31 23:35 Assign_2
+drwxrwxr-x 2 aditya aditya 4096 Jun  1 23:54 Assign_3
+__________________________________________________________________________________________________
+__________________________________________________________________________________________________
+
+
+2. List the directory contents size wise sorted.(man ls)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~$ ls -s|sort
+ 12 CPP_240344220009.zip
+  4 1
+  4 C Assignments
+  4 CPP_240344220009
+  4 CPP-83740
+  4 CPP-83740.zip
+  4 Cpp Assignments
+  4 DBT_240344220009
+  4 DBT_240344220009.zip
+  4 DBT assignments
+  4 Desktop
+  4 Documents
+  4 Downloads
+  4 Hackathon 1
+  4 Internshala
+  4 MERN
+  4 MongoDB
+  4 Music
+  4 My Git Credentials
+  4 My Organization (my git repo)
+  4 OS_Assignments
+  4 Pictures
+  4 Public
+  4 snap
+  4 Sunbeam DAC git
+  4 Templates
+  4 Videos
+  4 WPT_240344220009
+  4 WPT Assignments
+616 WPT_240344220009.zip
+total 740
+
+__________________________________________________________________________________________________
+__________________________________________________________________________________________________
+
+
+3. List directory contents along with their inode no. (man ls)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ ls -i
+1442339 Assign_1  1442340 Assign_2  1442395 Assign_3
+
+__________________________________________________________________________________________________
+__________________________________________________________________________________________________
+
+
+4. List the contents of the subdirectory.
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments$ ls -R
+.:
+Assign_1  Assign_2  Assign_3
+
+./Assign_1:
+1.txt  Assign_1  Assign_1.odt  copy  create  empty  empty_1  Sort
+
+./Assign_1/copy:
+1.txt  today
+
+./Assign_1/create:
+
+./Assign_2:
+Assign_2
+
+./Assign_3:
+
+__________________________________________________________________________________________________
+__________________________________________________________________________________________________
+
+
+5. Create a file, write your surname and name in it and save.
+i. now open the same file and add your address in it and save.
+ii. reopen the same file and check your name and address in it.
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2$ cat> myname
+Marathe Aditya
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2$ cat>> myname
+Pune
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2$ cat myname
+Marathe Aditya
+Pune
+
+__________________________________________________________________________________________________
+__________________________________________________________________________________________________
+
+
+6. how to change the time stamp of file (man touch)
+	Sol:
+TOUCH(1)                                   User Commands                                  TOUCH(1)
+
+NAME
+       touch - change file timestamps
+
+SYNOPSIS
+       touch [OPTION]... FILE...
+
+DESCRIPTION
+       Update the access and modification times of each FILE to the current time.
+
+       A FILE argument that does not exist is created empty, unless -c or -h is supplied.
+
+       A  FILE  argument  string of - is handled specially and causes touch to change the times of
+       the file associated with standard output.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -a     change only the access time
+
+       -c, --no-create
+              do not create any files
+
+       -d, --date=STRING
+              parse STRING and use it instead of current time
+
+       -f     (ignored)
+
+       -h, --no-dereference
+              affect each symbolic link instead of any referenced file  (useful  only  on  systems
+              that can change the timestamps of a symlink)
+
+       -m     change only the modification time
+
+       -r, --reference=FILE
+              use this file's times instead of current time
+
+       -t STAMP
+              use [[CC]YY]MMDDhhmm[.ss] instead of current time
+
+       --time=WORD
+              change  the  specified time: WORD is access, atime, or use: equivalent to -a WORD is
+              modify or mtime: equivalent to -m
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       Note that the -d and -t options accept different time-date formats.
+
+DATE STRING
+       The --date=STRING is a mostly free format human readable date string such as "Sun,  29  Feb
+       2004  16:21:42  -0800" or "2004-02-29 16:21:42" or even "next Thursday".  A date string may
+ Manual page touch(1) line 1/77 63% (press h for help or q to quit)
+__________________________________________________________________________________________________
+__________________________________________________________________________________________________
+
+
+7. Create directory structure : Give following commands ,
+-> mkdir one
+-> cd one
+-> touch 1.txt 11.txt 111.txt
+-> mkdir two
+-> cd two
+-> touch 2.txt 22.txt 222.txt
+-> mkdir three
+-> cd three
+-> touch 3.txt 33.txt 333.txt
+-> mkdir four
+-> cd four
+-> touch 4.txt 44.txt 444.txt
+-> mkdir five
+-> cd five
+-> touch 5.txt 55.txt 555.txt
+-> cd ~ (i.e. go to your home directory)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2$ mkdir one
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2/one$ touch 1.txt 11.txt 111.txt
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2$ mkdir two
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2/one$ touch 2.txt 22.txt 222.txt
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2$ mkdir three
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2/one$ touch 3.txt 33.txt 333.txt
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2$ mkdir four
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2/one$ touch 4.txt 44.txt 444.txt
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2$ mkdir five
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2/one$ touch 5.txt 55.txt 555.txt
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~$ cd /home/aditya/OS_Assignments/Assign_2/one/two/three/four/five/
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2/one/two/three/four/five$ cd ~
+__________________________________________________________________________________________________
+__________________________________________________________________________________________________
+
+8. Considering above directory structure , Do following operations :
+i. list the directory contents of directory named "five" from current directory (i.e. home directory).
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2$ ls /home/aditya/OS_Assignments/Assign_2/one/two/three/four/five/
+555.txt  55.txt  5.txt
+
+	
+ii. write your name in a file named "44.txt" of directory "four" from current directory.
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:/home$ pwd
+/home
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:/home$ cat> /home/aditya/OS_Assignments/Assign_2/one/two/three/four/44.txt
+Aditya
+
+iii. remove the file named "555.txt" from directory "five" from current directory.
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:/home$ rm /home/aditya/OS_Assignments/Assign_2/one/two/three/four/five/555.txt
+
+iv. change directory to five ( i.e. cd one/two/three/four/five/ ).
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2$ cd one/two/three/four/five/
+
+v. write your course name in file named "3.txt" which resides in directory "three" from current directory (i.e.five).also read the same file.
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2/one/two/three/four/five$ cat> /home/aditya/OS_Assignments/Assign_2/one/two/three/3.txt
+PG-DAC
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2/one/two/three/four/five$ cat /home/aditya/OS_Assignments/Assign_2/one/two/three/3.txt
+PG-DAC
+
+vi. list the contents of directory "two" from current directory (i.e. five).
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2/one/two/three/four/five$ ls /home/aditya/OS_Assignments/Assign_2/one/two/
+222.txt  22.txt  2.txt  three
+
+vii. remove file named "222.txt" which belongs to directory "two" from current directory (i.e. five)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2/one/two/three/four/five$ rm /home/aditya/OS_Assignments/Assign_2/one/two/222.txt
+
+viii. now change the directory to "one"
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2/one/two/three/four/five$ cd /home/aditya/OS_Assignments/Assign_2/one/
+
+ix. remove all files only from directory named "five" from current directory (i.e. one)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2/one$ rm /home/aditya/OS_Assignments/Assign_2/one/two/three/four/five/*
+
+x. remove directory named "five" from current directory (i.e. one)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2/one$ rmdir /home/aditya/OS_Assignments/Assign_2/one/two/three/four/five/
+
+xi. remove whole directory named "four" from current directory (i.e. one)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2/one$ rm -r /home/aditya/OS_Assignments/Assign_2/one/two/three/four/
+
+xii. change to your home directory.
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2/one$ cd /home/
+__________________________________________________________________________________________________
+__________________________________________________________________________________________________
+
+
+9. change the time stamp of file named "3.txt" which resides in directory named "three".(man touch)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_2/one/two/three$ touch 3.txt 
