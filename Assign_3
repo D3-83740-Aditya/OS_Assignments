@@ -1,0 +1,307 @@
+Q1. ls Display hidden files
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~$ ls -A
+ 1                      .gitconfig                       Pictures
+ .bash_history          .gnupg                           .pki
+ .bash_logout          'Hackathon 1'                     .profile
+ .bashrc                Internshala                      Public
+ .cache                 .lesshst                         snap
+'C Assignments'         .local                           .ssh
+ .config                MERN                             .sudo_as_admin_successful
+ CPP_240344220009       .mongodb                        'Sunbeam DAC git'
+ CPP_240344220009.zip   MongoDB                          Templates
+ CPP-83740              .mozilla                         .thunderbird
+ CPP-83740.zip          Music                            Videos
+'Cpp Assignments'       .my.cnf                          .vscode
+ DBT_240344220009      'My Git Credentials'              WPT_240344220009
+ DBT_240344220009.zip  'My Organization (my git repo)'   WPT_240344220009.zip
+'DBT assignments'       .mysql_history                  'WPT Assignments'
+ Desktop                .npm                             .yarn
+ Documents              .nv                              .yarnrc
+ .dotnet                .nvm
+ Downloads              OS_Assignments
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q2. rename Rename all *.txt files to *.htm
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ rename 's/\.txt$/.html/' *.txt
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q3. ln -s Create symbolic link (shortcut) for a file
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3/three/threee$ ln -s /home/aditya/Pictures/ pic
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q4. ln Create hard link for a file
+Sol:
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q5. stat Display time stamp of the file
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ stat /home/aditya/OS_Assignments/Assign_3
+  File: /home/aditya/OS_Assignments/Assign_3
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 804h/2052d	Inode: 1442395     Links: 3
+Access: (0775/drwxrwxr-x)  Uid: ( 1000/  aditya)   Gid: ( 1000/  aditya)
+Access: 2024-06-02 15:46:40.381293808 +0530
+Modify: 2024-06-02 15:50:49.686311589 +0530
+Change: 2024-06-02 15:50:49.686311589 +0530
+ Birth: 2024-06-01 23:54:20.648892375 +0530
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q6. touch Change the time stamp of the file
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ touch /home/aditya/OS_Assignments/Assign_3
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q7. touch Create empty file
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ touch empty
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q8. tail Print all lines in a file from fifth line onwards
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ tail -n +5 empty
+This is line 5
+This is line 6
+This is line 7
+This is line 8
+This is line 9
+This is line 10
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q9. init 0, poweroff Shutdown (Only for super-user)
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ init 0
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q10. init 6, reboot Reboot (Only for super-user)
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ init 6
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q11. whoami Find current user
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ whoami
+aditya
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q12. tty Find current terminal
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ tty
+/dev/pts/0
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q14. who am i Find current user and terminal
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ who am i
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q15. users Find all users logged into the system
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ users
+aditya
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q16. grep, egrep, fgrep Find a given word/pattern from the file
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ grep "is" file
+This is operating system module.
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ egrep "wo+w" file
+wow
+woow
+wooow
+woooow
+wooooow
+woooooow
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q17. chmod Make a file as read-only
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ chmod a-w file
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q18. chmod Make a file as write, read and execute
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ chmod 700 file
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q19. wc(using redirection) Take input from the file, count words and store output to other file
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ wc file|cat>file1
+OR
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ wc -w Assign_3>>file6
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q20. who | wc (using pipe) Count words in output of “who” command
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ who | wc 
+      1       5      44
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q21. head, tail (using pipe) Print lines 5 to 10 from the given file
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ head -10 empty|tail -n -6
+This is line 5
+This is line 6
+This is line 7
+This is line 8
+This is line 9
+This is line 10
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q22. sort , uniq (using pipe) Print the uniq values from the unsorted file
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ cat file3
+Ramesh
+Pranav
+Aditya
+Jayeshaditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ wc -w Assign_3>>file6
+
+Avadhut
+Avadhut
+Aditya
+Sagar
+Sameer
+Amit
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ cat file3|sort
+Aditya
+Aditya
+Amit
+Avadhut
+Avadhut
+Jayesh
+Pranav
+Ramesh
+Sagar
+Sameer
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ cat file3|sort|uniq
+Aditya
+Amit
+Avadhut
+Jayesh
+Pranav
+Ramesh
+Sagar
+Sameer
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q23. who, grep (using pipe) Display all users not using tty2, tty3, tty4
+Sol:
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q24. ls Display all files in ascending order of their file size
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ ls -s|sort
+4 cat
+4 cat.html
+4 empty
+4 file
+4 file1
+4 file2
+4 file3
+4 file4
+4 file5
+4 file6
+4 three
+4 V1.html
+8 head
+total 56
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q25. ls, grep (using pipe) Count number of files and directories from current directory
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ ls -a | grep -c ["a-z A-Z -d"]
+16
+___________________________________________________________________________________________________
+
+Q26. ls, grep (using pipe) Display only hidden files in a directory
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~$ ls -a|grep "\."
+.
+..
+.bash_history
+.bash_logout
+.bashrc
+.cache
+.config
+CPP_240344220009.zip
+CPP-83740.zip
+DBT_240344220009.zip
+.dotnet
+.gitconfig
+.gnupg
+.lesshst
+.local
+.mongodb
+.mozilla
+.my.cnf
+.mysql_history
+.npm
+.nv
+.nvm
+.pki
+.profile
+.ssh
+.sudo_as_admin_successful
+.thunderbird
+.vscode
+WPT_240344220009.zip
+.yarn
+.yarnrc
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q27. tr Convert file contents into uppercase , also learn "-s" option of this command
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ cat file4
+Hello Aditya welcome to sunbeam
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ cat file4|tr "a-z" "A-Z"
+HELLO ADITYA WELCOME TO SUNBEAM
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ cat file4
+Hello                Aditya welcome             to           sunbeam
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_3$ cat file4|tr -s " " ","
+Hello,Aditya,welcome,to,sunbeam
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
+
+Q28. cut Split the file contents using delimiter and print required fields
+Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_4$ cat data.txt|tr " " ","|cut -d "," -f1,2
+Linux,is
+In,Linux
+files,have
+files,have
+files,have
+there,are
+___________________________________________________________________________________________________
+___________________________________________________________________________________________________
