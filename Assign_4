@@ -1,0 +1,83 @@
+Create a file named "data.txt" and write the following lines in it(write as it is).
+
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+compose the commands fulfilled following requirement
+
+i. count the no. of words ,characters and lines from above 2 file.(man wc)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_4$ wc -w<data.txt 
+25
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_4$ wc -m<data.txt 
+145
+
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_4$ wc -l<data.txt 
+6
+
+ii. list the lines having word "files" (man grep)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_4$ grep -w "files" data.txt
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+iii. list the lines having word "file" (man grep)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_4$ grep -w "file" data.txt
+In Linux everything is file
+
+iv. list the lines which don't have word "files" (man grep)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_4$ grep -v "files" data.txt
+Linux is open source.
+In Linux everything is file
+
+v. list the lines having word "have" . (man grep)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_4$ grep "have" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+vi. list the lines starts with letter "f" (man grep)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_4$ grep "^f" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+vii. list the lines ends with "." (man grep)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_4$ grep "[.]$" data.txt
+Linux is open source.
+files have permissions.
+files have inode no.
+files have size.
+
+viii. list only first two lines.(man head)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_4$ head -2 data.txt
+Linux is open source.
+In Linux everything is file
+
+ix. list only last three lines.(man tail)
+	Sol:
+aditya@aditya-VivoBook-15-ASUS-Laptop-X507UF:~/OS_Assignments/Assign_4$ tail -3 data.txt 
+files have inode no.
+files have size.
+there are several types of files
+
+x. list line no.3,4 and 5 . (man head and tail)
+	Sol:
+~/OS_Assignments/Assign_4$ head -6 data.txt|tail -n -4|head -3
+files have permissions.
+files have inode no.
+files have size.
+
